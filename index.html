@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Jogo da velha</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="div-sections">
+            <section class="section-names" id="sectionNames">
+                <h1>Informe os nomes dos jogadores</h1>
+                <span id="errorsNames"></span>
+                <form id="formNames">
+                    <input type="text" name="player1" placeholder="Jogador 1:">
+                    <input type="text" name="player2" placeholder="Jogador 2:">
+                    <button type="submit" id="onClickToPlay">Jogar</button>
+                </form>
+            </section>
+            <section class="section-game" id="sectionGame">
+                <div class="div-game-informations">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nomes</th>
+                                <th>Vez</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody"></tbody>
+                    </table>
+                </div>
+                <div class="div-game-tab">
+                    <div class="col-1">
+                        <div class="tab" id="0:0"></div>
+                        <div class="tab" id="0:1"></div>
+                        <div class="tab" id="0:2"></div>
+                    </div>
+                    <div class="col-2">
+                        <div class="tab" id="1:0"></div>
+                        <div class="tab" id="1:1"></div>
+                        <div class="tab" id="1:2"></div>
+                    </div>
+                    <div class="col-3">
+                        <div class="tab" id="2:0"></div>
+                        <div class="tab" id="2:1"></div>
+                        <div class="tab" id="2:2"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+</body>
+
+<script type="module" src="./js/index.js"></script>
+
+</html>
